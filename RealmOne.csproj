@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\tModLoader.targets" />
+	<PropertyGroup>
+		<AssemblyName>RealmOne</AssemblyName>
+		<TargetFramework>net6.0</TargetFramework>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="Items\Tiles\**" />
+		<EmbeddedResource Remove="Items\Tiles\**" />
+		<None Remove="Items\Tiles\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Assets\MenuBackground\" />
+	</ItemGroup>
+</Project>
